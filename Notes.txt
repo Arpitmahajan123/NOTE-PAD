@@ -1,1 +1,0 @@
-fs.readdir() :- This Method is Use To Read The Content Of Speacific Direactory And Also Give A Black Array. 
