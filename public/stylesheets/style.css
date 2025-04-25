@@ -144,9 +144,9 @@ h1{
     box-shadow: 15px 15px 15px 0px wheat;
     background-color: azure;
     
-}
+} 
 
-/* .Yo{
+.Yo{
     display: inline;
     border: 2px solid red;
     margin-left: 50px;
@@ -189,3 +189,4 @@ p{
     position: relative;
     left: 80px;
 }
+
