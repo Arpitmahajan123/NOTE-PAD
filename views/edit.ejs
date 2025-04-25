@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/stylesheets/edit.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTEPAD APP</title>
+</head>
+<body>
+
+    <div class="home">
+        <a href="/">GO BACK TO HOME</a>
+    </div>
+    
+    <div class="first">
+
+        <div class="formm">
+            <form action="/edit" method="post">
+                <h1 style="text-decoration: underline; text-shadow: 2px 3px 5px red;" class="subheading">
+                    Edit Your Task
+                </h1>
+            
+                <input class="text" placeholder="Previous Name" id="one" style="text-align: center;" name="previous" value="<%= filename %>">
+                <!-- <textarea class="area" placeholder="Task Details" id="two" style="text-align: center;" name="Details"></textarea> -->
+                 <input type="text" placeholder="New Name" id="two" style="text-align: center;" name="new">
+                <input type="submit" value="Edit Task" id="three" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="/javascripts/script.js"></script> -->
+    <footer>
+        <div class="foot">
+            <b>All Rights To @ Arpit Mahajan.</b>
+        </div>
+    </footer>
+</body>
+</html>

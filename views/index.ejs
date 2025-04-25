@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO'S APP</title>
+</head>
+<body>
+    <h1 style="text-decoration: underline; text-shadow: 2px 3px 5px lawngreen;" class="heading">
+        "Welcome To My NOTEPAD Application"
+    </h1><br>
+
+    
+
+
+    <!-- This Is Form. -->
+    <div class="main">
+        <div class="form">
+            <form action="/create" method="post">
+                <h1 style="text-decoration: underline; text-shadow: 2px 3px 5px red;" class="subheading">
+                    Create Your Notes
+                </h1>
+            
+                <input class="text" placeholder="Title Here !" id="one" style="text-align: center;" name="title">
+                <textarea class="area" placeholder="Task Details" id="two" style="text-align: center;" name="Details"></textarea>
+                <input type="submit" value="Create Task" id="three" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <!-- This Is Task Sheet. -->
+    <div class="task">
+        <!-- Writing Logic Here ! -->
+    <% if (files.length > 0) { %>
+        <% files.forEach(function(val) { %> 
+            <!-- <p><%= val %></p>  -->
+            <div class="task1">
+                <h1>
+                    <%= val %> 
+                </h1>
+
+                <!-- <p class="Yo"><%= val %></p> -->
+                <h3 style="color: darkblue; margin-left: 20px; margin-top: 80px; text-decoration: underline;">
+                    <a href="/files/<%= val %>">Read More</a>
+                    <a href="/edit/<%= val %>" class="new">Edit Here</a>
+                </h3>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <div class="task4">
+            <h1>
+                No Task Right Now !
+            </h1>
+            <h3 style="color: blue; margin-left: 20px; margin-top: 40px; text-decoration: underline; text-align: center;">
+                <a href="http://">Read More</a>
+            </h3>
+        </div> 
+    <% } %>
+
+
+        <div class="task2" style="visibility: hidden;">
+            <h1>
+                This Is 2nd Task
+            </h1>
+            <h3 style="color: blue; margin-left: 20px; margin-top: 40px; text-decoration: underline;">
+                <a href="http://">Read More</a>
+            </h3>
+        </div>
+
+        <div class="task3" style="visibility: hidden;">
+            <h1>
+                This Is 3rd Task
+            </h1>
+            <h3 style="color: blue; margin-left: 20px; margin-top: 40px; text-decoration: underline;">
+                <a href="http://">Read More</a>
+            </h3>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot">
+            <b>all rights reserved to @ <a href="https://www.linkedin.com/in/arpit-mahajan-45b8b5283/" style="text-decoration: none; color: black;">Arpit Mahajan.</a></b>
+        </div>
+    </footer>
+
+    <script src="/javascripts/script.js"></script>
+
+</body>
+</html>
